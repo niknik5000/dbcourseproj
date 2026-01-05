@@ -145,7 +145,7 @@ for _ in range(total_flights):
     
     generated_flights.append((dep_dt, sql))
 
-# Ταξινόμηση και Εγγραφή
+
 generated_flights.sort(key=lambda x: x[0])
 
 with open(filename, "w", encoding="utf-8") as f:
@@ -154,5 +154,6 @@ with open(filename, "w", encoding="utf-8") as f:
     for _, sql in generated_flights:
         f.write(sql + "\n")
    
+
 
 print("DONE")
